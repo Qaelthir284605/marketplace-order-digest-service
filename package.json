@@ -1,0 +1,22 @@
+{
+  "name": "marketplace-order-digest-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "dev": "node --experimental-strip-types src/marketplace_digest_service.ts",
+    "schedule": "node --experimental-strip-types src/marketplace_digest_service.ts schedule",
+    "test": "node --experimental-strip-types --test src/marketplace_digest.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
